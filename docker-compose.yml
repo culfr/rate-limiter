@@ -1,0 +1,5 @@
+services:
+  openresty:
+    image: openresty/openresty:alpine
+    ports:
+      - "8080:80"
