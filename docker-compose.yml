@@ -3,3 +3,5 @@ services:
     image: openresty/openresty:alpine
     ports:
       - "8080:80"
+    volumes:
+      - "./openresty/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro"
